@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--color-surface);
+  background-color: var(--color-surface);
+}
+
+:root {
+  --brand-primary-color: #59b2ff;
+  --brand-secondary-color: #3487cf;
+  --brand-tertiary-color: #1d6fb6;
+    
+  --accent-color-primary:#B259FF;
+  --accent-color-secondary:#FF59f9;
+    --accent-color-tertiary:#FF598B;
+    --accent-color-quaternary:#FF8B59;
+    --accent-color-quinary:#FFCD59;
+    --accent-color-senary:#E1FF59;
+    --accent-color-septenary:#59FF91;
+    --accent-color-octenary:#59FFF9;
+    --accent-color-nonary:#6A59FF;
+
+    --feedback-color:#FF5959;
+ 
+    --input-color-base:#1c1f21;
+    --input-color-stroke:#363b40;
+    --input-color-placeholder:#869198;
+
+    --shape-color-background:#131516;
+    --shape-color-body:#212427;
+    --shape-color-button:#2c3033;
+    --shape-color-hover:#383d42;
+
+    --color-text:#C8CDD0;
+    --color-text-secondary:#F9F9F9; 
+
+
+ 
+  --font-family: "Leckerli One", "Baloo 2", "Open Sans";
+
+  --text-lg-size: 40px;
+  --text-lg-line: 120%;
+  --text-lg-weight: 700;
+
+  --text-md-size: 28px;
+  --text-md-line: 120%;
+  --text-md-weight: 700;
+
+  --text-sm-size: 18px;
+  --text-sm-line: 120%;
+  --text-sm-weight: 700;
+
+  --text-regular-size: 16px;
+  --text-regular-line: 14px;
+  --text-regular-weight: ;
+}
+

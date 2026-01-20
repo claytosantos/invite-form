@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Convite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+    <script src="create.js"></script>
+<link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&family=Poppins:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+   <img class="img" src="Formulário de convite (Community)/Brand.png" alt="bolo de aniversário">
+<main>
+<h1>Crie seu Convite</h1>
+<p class="on">sobre o evento</p>
+    <form action="/submit" method="post">
+        <label for="eventName">Nome do evento</label>
+        <input type="text" id="eventName" name="eventName" placeholder="Digite o nome do evento" required><br><br>
+
+        <label for="dataHoraInicio">Inicio</label>
+        <input type="datetime-local" id="dataHoraInicio" name="dataHoraInicio" placeholder="Início do evento" required><br><br>
+
+        <label for="dataHoraFim">Fim</label>
+        <input type="datetime-local" id="dataHoraFim" name="dataHoraFim" placeholder="Fim do evento" required><br><br>
+
+        <label for="button">Tipo</label>
+        <input type="button" id="button-presencial" name="button" value="Presencial" required><br><br>
+        <input type="button" id="button" name="button" value="Online" required><br><br>
+
+        <label for="event">Local</label>
+        <input type="text" id="Local" name="Local" placeholder="Link ou Endereço" required><br><br>
+        
+        <label for="description">Descrição</label>
+        <textarea id="description" name="description" placeholder="Escreva sobre os detalhes do evento" required></textarea><br><br>
+    </form> 
+    <img src="Formulário de convite (Community)/vector/customization.svg" alt="customization">
+    <p class="personalizacao">Personalização</p>
+    <h3>Cor principal</h3>
+    <div class="colors">
+        <button type="button" class="cor" data-cor="#3498db" aria-label="Azul"></button>
+        <button type="button" class="cor" data-cor="#9b59b6" aria-label="Roxo"></button>
+        <button type="button" class="cor" data-cor="#e84393" aria-label="Rosa"></button>
+        <button type="button" class="cor" data-cor="#e74c3c" aria-label="Vermelho"></button>
+        <button type="button" class="cor" data-cor="#f1c40f" aria-label="Amarelo"></button>
+        <button type="button" class="cor" data-cor="#3498db" aria-label="Azul"></button>
+        <button type="button" class="cor" data-cor="#9b59b6" aria-label="Roxo"></button>
+        <button type="button" class="cor" data-cor="#e84393" aria-label="Rosa"></button>
+        <button type="button" class="cor" data-cor="#e74c3c" aria-label="Vermelho"></button>
+        <button type="button" class="cor" data-cor="#f1c40f" aria-label="Amarelo"></button>
+        <button type="button" class="cor" data-cor="#f1c40f" aria-label="Amarelo"></button>    
+    </div>
+
+    <h3>Tema do evento</h3>
+    <div class="themes">
+        <button type="button" class="tema" data-tema="aniversario" aria-label="Aniversário">
+            <img src="icons/birthday.svg" alt="Aniversário">
+            <p>Aniversário</p>
+        </button>
+        <button type="button" class="tema" data-tema="reuniao" aria-label="Reunião">
+            <img src="icons/child.svg" alt="Infantil">
+            <p>Infantil</p>
+        </button>
+        <button type="button" class="tema" data-tema="casamento" aria-label="Casamento">
+            <img src="icons/graduation.svg" alt="Graduação">
+            <p>Formatura</p>   
+        </button>
+        <button type="button" class="tema" data-tema="festa" aria-label="Festa">
+            <img src="icons/married.svg" alt="Casamento">
+            <p>Casamento</p>
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/babyshower.svg" alt="Chá de bebê">
+            <p>Chá de bebê</p>
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/pottea.svg" alt="Chá de panela">
+            <p>Chá de panela</p>
+        </button>
+    <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/carnival.svg" alt="Carnaval">
+            <p>Carnaval</p>
+        </button>
+            <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/easter.svg" alt="Páscoa"> 
+            <p>Páscoa</p>
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/saintjohn.svg" alt="São João">
+            <p>São João</p> 
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/halloween.svg" alt="Halloween"> 
+            <p>Halloween</p>
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/christmas.svg" alt="Natal"> 
+            <p>Natal</p>
+        </button>
+        <button type="button" class="tema" data-tema="conferencia" aria-label="Conferência">
+            <img src="icons/other.svg" alt="Outros"> 
+            <p>Outros</p>
+        </button>
+    </div>
+    <div id="separador">
+    <h3>Estilo</h3>
+        <div class="container">
+        <input type="checkbox" class="switch" id="darkmodeSwitch">
+        <label for="darkmodeSwitch" class="switch-label"></label>
+        <span class="status"></span>
+        <p>Escuro</p> <!-- Para mostrar "ON" ou "OFF" -->
+    </div> 
+    </div>
+    <div>
+        <div class="button-switch">
+        <label for="darkmodeSwitch">Ativar</label>
+        <input type="checkbox" class="switch" id="darkmodeSwitch">
+        <label for="darkmodeSwitch" class="switch-label"></label>
+        <span class="status"></span> <!-- Para mostrar "ON" ou "OFF" -->
+        </div>
+    </div>
+   <div class="foto de capa">
+    <h3>Foto de capa</h3>
+    <button id="btnupload">Selecionar arquivo</button> <!--Alterar no javascript -->
+        <img src="icons/addphoto.svg" alt="Selecionar">
+        
+  
+
+
+
+
+</main>    
+</body>
+</html>
