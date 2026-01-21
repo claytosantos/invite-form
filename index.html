@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="index.css">
-    <script src="create.js"></script>
+    <script src="create.js" defer ></script>  
 <link
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&family=Poppins:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
     rel="stylesheet">
 </head>
 <body>
-   <img class="img" src="Formulário de convite (Community)/Brand.png" alt="bolo de aniversário">
+   <img class="img" src="icons/brand.svg" alt="bolo de aniversário">
 <main>
 <h1>Crie seu Convite</h1>
-<p class="on">sobre o evento</p>
+<img src="icons/contact.svg" alt="icone de contato">
+<p class="on">Sobre o evento</p>
     <form action="/submit" method="post">
         <label for="eventName">Nome do evento</label>
         <input type="text" id="eventName" name="eventName" placeholder="Digite o nome do evento" required><br><br>
@@ -26,7 +27,7 @@
 
         <label for="dataHoraFim">Fim</label>
         <input type="datetime-local" id="dataHoraFim" name="dataHoraFim" placeholder="Fim do evento" required><br><br>
-
+ 
         <label for="button">Tipo</label>
         <input type="button" id="button-presencial" name="button" value="Presencial" required><br><br>
         <input type="button" id="button" name="button" value="Online" required><br><br>
@@ -127,7 +128,31 @@
     <button id="btnupload">Selecionar arquivo</button> <!--Alterar no javascript -->
         <img src="icons/addphoto.svg" alt="Selecionar">
         
-  
+  <h2 img>Dados para contato</h2>
+  <img src="icons/contact.svg" alt="icone de contato">  
+    <label for="contactName">Nome para contato</label>
+    <input type="text" id="contactName" name="contactName" placeholder="Digite o nome para contato" required><br><br>
+
+    <label for="contactEmail">E-mail para contato</label>
+    <input type="email" id="contactEmail" name="contactEmail" placeholder="Digite o e-mail para contato" required><br><br>
+
+    <label for="contactPhone">Telefone para contato</label>
+    <input type="tel" id="contactPhone" name="contactPhone" placeholder="Digite o telefone para contato" required><br><br>
+   </div>
+   <div class="terms">
+  <label class="terms__label">
+    <input type="checkbox" required>
+    <span>
+      Li e concordo com os 
+      <a href="/termos.html" target="_blank">Termos e Condições</a>
+      e com a 
+      <a href="/politica.html" target="_blank">Política de Privacidade</a>
+    </span>
+  </label>
+</div>  
+   
+   <button  class="btn-icon"> <img src="icons/invite.svg" alt="invite-preview">
+    <Span>Gerar Convite</Span></button>
 
 
 
